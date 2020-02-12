@@ -1,4 +1,4 @@
-Podstrony z opisem:
+# Podstrony z opisem:
 
 1. strona glowna (dla kazdego)
 - najbliższy bieg
@@ -303,7 +303,7 @@ Podstrony z opisem:
 
 --------------------------------------------------------------------
 
-Grafika:
+# Grafika:
 
 - logo strony (rozne rozmiary)
 - grafiki prostych elementow zima / jesien / lato / wiosna
@@ -315,7 +315,7 @@ Grafika:
 
 --------------------------------------------------------------------
 
-Animacje: 
+# Animacje: 
 
 - proste łatwe animacje nie obciążające:
 - na labele (przy złych danych się zatrzęsie i zmieni kolor)
@@ -329,7 +329,7 @@ Animacje:
 
 --------------------------------------------------------------------
 
-Tebele:
+# Tebele:
 
 1. uzytkownicy-logowanie (zwykly, fb, google)
 /userid (klucz glowny tabeli)
@@ -688,7 +688,7 @@ Tebele:
 /data ((oceny)(czas uniksowy w sekundach))
 /ocena
 
-÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷
+-------------------------------
 
 - Kazda tabela ma swoje unikalne ID
 - userid (unikatowy numer uzytkownika)
@@ -701,7 +701,7 @@ Tebele:
 
 --------------------------------------------------------------------
 
-Zastosowane technologie:
+# Zastosowane technologie:
 
 - objekty
 - klasy
@@ -710,7 +710,7 @@ Zastosowane technologie:
 
 --------------------------------------------------------------------
 
-Pomysły:
+# Pomysły:
 
 - logowanie w hamburger menu
 - animacja wczytywania strony
@@ -720,7 +720,7 @@ Pomysły:
 
 --------------------------------------------------------------------
 
-Emaile:
+# Emaile:
 
 - potwierdzenie konta
 - zmiana hasła
@@ -735,7 +735,7 @@ Emaile:
 
 --------------------------------------------------------------------
 
-Okienka:
+# Okienka:
 
 - cookies
 - newsletter
