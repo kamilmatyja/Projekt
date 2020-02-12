@@ -1,305 +1,305 @@
 Podstrony z opisem:
 
 1. strona glowna (dla kazdego)
--najbliższy bieg
--o stronie
--posty z bloga (~3)
+- najbliższy bieg
+- o stronie
+- posty z bloga (~3)
 
 2. rejestracja (dla kazdego)
--formolaz rejestracji
--mozliwosc zarejestrowania przez fb, google
--potwierdzenie maila aby sie zarejestrować
--mozliwosc dodania sie do newslettera
--powrot do strony z przed przekierowania
--zapisywanie na czym użytkownik został zarejestrowany ip, adres, data, godzina
--rejestracja w 3 krokach (dane podstawowe, dane rozszezone, potwierdzenie konta)
+- formolaz rejestracji
+- mozliwosc zarejestrowania przez fb, google
+- potwierdzenie maila aby sie zarejestrować
+- mozliwosc dodania sie do newslettera
+- powrot do strony z przed przekierowania
+- zapisywanie na czym użytkownik został zarejestrowany ip, adres, data, godzina
+- rejestracja w 3 krokach (dane podstawowe, dane rozszezone, potwierdzenie konta)
 
 3. logowanie (dla niezalogowanego)
--formolaz logowania
--logowanie poprzez fb, google
--powrot do strony z przed przekierowania
--jeżeli nie potwierdzisz maila to nie da sie zalogować (krok 3)
--przycisk "zapomnialem hasla"
--zapis logi: ip, urzadzenie, przegladarka, data, godzina
+- formolaz logowania
+- logowanie poprzez fb, google
+- powrot do strony z przed przekierowania
+- jeżeli nie potwierdzisz maila to nie da sie zalogować (krok 3)
+- przycisk "zapomnialem hasla"
+- zapis logi: ip, urzadzenie, przegladarka, data, godzina
 
 4. Zapomnialem hasla (dla niezalogowanego)
--formolaz z emailem
--wyslanie emaila z mozliwascia zmiany hasla
--wprowadzenie nowego hasla
--powtozenie nowego hasla
--przekierowanie do strony z przed logowania
+- formolaz z emailem
+- wyslanie emaila z mozliwascia zmiany hasla
+- wprowadzenie nowego hasla
+- powtozenie nowego hasla
+- przekierowanie do strony z przed logowania
 
 5. biegi (dla kazdego)
--zapis na bieg
--zapis na wolontariat
--lista biegaczy
--strona biegu
--data
--godzina
+- zapis na bieg
+- zapis na wolontariat
+- lista biegaczy
+- strona biegu
+- data
+- godzina
 
 6. strona biegu (dla kazdego)
--ocena w gwiazdkach
--informacje
--zdjecia
--trasa
--medal
--zapis na bieg
--zapis na wolontariat
--lista biegaczy
--regulamin biegu
--regulamin wolo
--cena
--mapa
+- ocena w gwiazdkach
+- informacje
+- zdjecia
+- trasa
+- medal
+- zapis na bieg
+- zapis na wolontariat
+- lista biegaczy
+- regulamin biegu
+- regulamin wolo
+- cena
+- mapa
 
 7. zapisz sie na bieg jako biegacz (dla zalogowanych)
--na podstawie konta
--platnosc
--wybieranie dystansu
--mozliwosc dodania poodopiecznego
--regulamin biegu do zaakceptowania
+- na podstawie konta
+- platnosc
+- wybieranie dystansu
+- mozliwosc dodania poodopiecznego
+- regulamin biegu do zaakceptowania
 
 8. zapisz sie jako wolontariusz (dla zalogowanych)
--na podstawie konta
--informacje dodatkowe od wolontariusza
--regulamin wolo do zaakceptowania
+- na podstawie konta
+- informacje dodatkowe od wolontariusza
+- regulamin wolo do zaakceptowania
 
 9. lista startowa (dla kazdego)
 - dane do ukazania dla kazdego (id, numer startowy, imie, nazwisko, rok, kat wiekowa, klub, miasto)
--wiecej danych po nacisnieciu strzalki
--po nacisnieciu na imie lub nazwisko przekierowanie na profil osoby
--jezeli osoba jest podopiecznym to przekierowanie na podprofil podopiecznego
+- wiecej danych po nacisnieciu strzalki
+- po nacisnieciu na imie lub nazwisko przekierowanie na profil osoby
+- jezeli osoba jest podopiecznym to przekierowanie na podprofil podopiecznego
 
 10. wyniki biegu (dla kazdego)
 - na podstawie listy startowej
 - dane do ukazania dla kazdego (id, numer startowy, imie, nazwisko, rok, kat wiekowa, klub, miasto, miejsce open, miejsce plec, miejsce kat wiekowa, czas netto, czas brutto, strata)
 
 11. wolontariat (dla kazdego)
--opis
--zachecenie
--korzysci (dyplom, koszulka, zaswiadczenie, dobra zabawa, posilek)
+- opis
+- zachecenie
+- korzysci (dyplom, koszulka, zaswiadczenie, dobra zabawa, posilek)
 
 12. galeria z biegu (dla kazdego)
--w formie galerii z > , < , x
--zdjecia zrobione przez fotografow podczas biegu
+- w formie galerii z > , < , x
+- zdjecia zrobione przez fotografow podczas biegu
 
 13. sklep (dla kazdego)
--lista produktow
--informacje o produkcie
--ocena w gwiazdkach
--cena
--dodanie do koszyka
+- lista produktow
+- informacje o produkcie
+- ocena w gwiazdkach
+- cena
+- dodanie do koszyka
 
 14. produkt (dla kazdego)
--mozliwosc kupienia bonu na bieg dla kogoś (kod do wprowadzenia)
--oceny w gwiazdkach
--dodawanie do koszyka
--zdjecia produktu w formie galerii z <, >, x
--kolory produktu
--rozmiary produktu
--opis
--dostepnosc (jest, nie ma)
--cena aktualna
--cena przed obnizka
--ilosc kupien produktu
+- mozliwosc kupienia bonu na bieg dla kogoś (kod do wprowadzenia)
+- oceny w gwiazdkach
+- dodawanie do koszyka
+- zdjecia produktu w formie galerii z <, >, x
+- kolory produktu
+- rozmiary produktu
+- opis
+- dostepnosc (jest, nie ma)
+- cena aktualna
+- cena przed obnizka
+- ilosc kupien produktu
 
 15. regulamin biegu (dla kazdego)
--dla biegaczy
+- dla biegaczy
 
 16. regulamin serwisu (dla kazdego)
--taki sam dla wszystkich
+- taki sam dla wszystkich
 
 17. regulamin wolo (dla kazdego)
--dla wolontariuszy
+- dla wolontariuszy
 
 18. zamowienie (dla zalogowanego, przekieriwanie z koszyka)
--lista wybranych produktow z koszyka
--wybranie koloru
--wybranie rozmiaru
--wybranie ilosci
--miejsce na bon rabatowy
--cena z bonem
--cena bez bonu
+- lista wybranych produktow z koszyka
+- wybranie koloru
+- wybranie rozmiaru
+- wybranie ilosci
+- miejsce na bon rabatowy
+- cena z bonem
+- cena bez bonu
 
 19. zamowienie platnosc (dla zalogowanego, przekierowanie z zamowienia)
--lista zamowienia
--cena
--platnosc
+- lista zamowienia
+- cena
+- platnosc
 
 20. zamowienia usera (dla zalogowanego, wlasciciela)
--lista zamowien usera
--stan zamowienia
--cena zamowienia
--przedmioty w zamowieniu
--ilosc danego przedmiotu
--rozmiar
--kolor
--cena zamowienia
+- lista zamowien usera
+- stan zamowienia
+- cena zamowienia
+- przedmioty w zamowieniu
+- ilosc danego przedmiotu
+- rozmiar
+- kolor
+- cena zamowienia
 
 21. profil usera (dla zalogowanego, wlasciciela)
--dodanie zdj profilowego
--dodanie zdj w tle
--przycinanie zdjecia
--wyniki z biegow
--zyciowki
--krotki opis "bio"
--do kazdego swojego wyniku mozna dodac opis i zdjecie
--nie bedzie zadnych postów oraz zdjęć po za przypadkiem wyżej
--osoba ktora jest znajomym może ocenić bieg like lub dyslike, skomentiwać go
--po dezaktywacji konta nie wyswietla sie zdjecie, tlo, bio, zyciowki, opis oraz zdjecia do biegow
--dodanie czy user aktywny (zielone kolko), nieaktywny (czas ile temu), dezaktywowany (czerwone kolko)
--link do znajomych
--link do podopiecznych
--link do zmiany danych
--link do dezaktywacji
--link do zamowien
--link do koszyka
--link do powiadomien
--link do postow znajomych
+- dodanie zdj profilowego
+- dodanie zdj w tle
+- przycinanie zdjecia
+- wyniki z biegow
+- zyciowki
+- krotki opis "bio"
+- do kazdego swojego wyniku mozna dodac opis i zdjecie
+- nie bedzie zadnych postów oraz zdjęć po za przypadkiem wyżej
+- osoba ktora jest znajomym może ocenić bieg like lub dyslike, skomentiwać go
+- po dezaktywacji konta nie wyswietla sie zdjecie, tlo, bio, zyciowki, opis oraz zdjecia do biegow
+- dodanie czy user aktywny (zielone kolko), nieaktywny (czas ile temu), dezaktywowany (czerwone kolko)
+- link do znajomych
+- link do podopiecznych
+- link do zmiany danych
+- link do dezaktywacji
+- link do zamowien
+- link do koszyka
+- link do powiadomien
+- link do postow znajomych
 
 22. zmiana danych usera (dla zalogowanego, wlasciciela)
--mozliwosc zmiany danych usera
--nie mozna zmieniac roku urodzenia
--mozliwosc dezaktywacji konta (ponowna aktywacja po wejsciu na emaila)
+- mozliwosc zmiany danych usera
+- nie mozna zmieniac roku urodzenia
+- mozliwosc dezaktywacji konta (ponowna aktywacja po wejsciu na emaila)
 
 23. znajomi usera (dla zalogowanego, wlasciciela)
--lista znajomych usera
--lista oczekujacych
--lista zaproszonych
--mozliwosc zmiany stanu znajomego
+- lista znajomych usera
+- lista oczekujacych
+- lista zaproszonych
+- mozliwosc zmiany stanu znajomego
 
 24. podopieczni usera (dla zalogowanego, wlasciciela)
--profil opiekuna
--lista podopiecznych
+- profil opiekuna
+- lista podopiecznych
 
 25. podopieczni profil (dla zalogowanego)
--profil opiekuna
--podprofil podopiecznego
--wyniki podopiecznego
+- profil opiekuna
+- podprofil podopiecznego
+- wyniki podopiecznego
 
 26. koszyk
--lista zeczy z koszyka usera
--cena zeczy
--zdjecia zeczy
--opis zeczy
+- lista zeczy z koszyka usera
+- cena zeczy
+- zdjecia zeczy
+- opis zeczy
 
 27. symulacja lotto do znizki (dla zalogowanego, przekierowanie z zamowienia)
--10% szans na pokazanie sie gry 
--tylko w przypadku zakupu pakietu startowego
+- 10% szans na pokazanie sie gry 
+- tylko w przypadku zakupu pakietu startowego
 
 28.2. panel admina - logowanie
--dodanie do bazy kazdej proby logowania
--logowanie 
--generowanie kodu do potwierdzenia
--wysylanie kodu na maila
--wstawianie kodu do bazy
--udane logowanie potwierdzane kodem
+- dodanie do bazy kazdej proby logowania
+- logowanie 
+- generowanie kodu do potwierdzenia
+- wysylanie kodu na maila
+- wstawianie kodu do bazy
+- udane logowanie potwierdzane kodem
 
 28.4. panel admina - statystyki
--oceny produktow (gwiazdki)
--oceny biegow (gwiazdki)
--oceny wpisow blogowych (gwiazdki)
--ilosc zakupien produktow (razem)
--ilosc zapisanych biegaczy (razem)
--ilosc przeczytan wpisow (razem)
--ilosc zapisanych wolontariuszy (razem)
--Aktywni urzytkownicy (na podstawie określania czasu trwania sesji)
--Wszyscy urzytkownicy
--Laczna ilosc logowan urzytkownikow
--Wyswietlenia strony wszystkie
--Wyswietlenia strony na podstawie ciasteczek
+- oceny produktow (gwiazdki)
+- oceny biegow (gwiazdki)
+- oceny wpisow blogowych (gwiazdki)
+- ilosc zakupien produktow (razem)
+- ilosc zapisanych biegaczy (razem)
+- ilosc przeczytan wpisow (razem)
+- ilosc zapisanych wolontariuszy (razem)
+- Aktywni urzytkownicy (na podstawie określania czasu trwania sesji)
+- Wszyscy urzytkownicy
+- Laczna ilosc logowan urzytkownikow
+- Wyswietlenia strony wszystkie
+- Wyswietlenia strony na podstawie ciasteczek
 
 28.6. panel admina - dodawanie
--dodawanie biegow
--dodawanie produktow
--dodawanie postow blogowych
--dodawanie przecen
--edycja biegow
--edycja produktow
--edycja postow blogowych
--usowanie biegow
--usowanie produktow
--usowanie postow blogowych
+- dodawanie biegow
+- dodawanie produktow
+- dodawanie postow blogowych
+- dodawanie przecen
+- edycja biegow
+- edycja produktow
+- edycja postow blogowych
+- usowanie biegow
+- usowanie produktow
+- usowanie postow blogowych
 
 28.8. panel-admina - przegladanie
--wglad na wszystkie biegi
--osobna liczba zapisanych na bieg
--osobna ocena biegu
--osobna liczba zapisanych na wolo
--wglad na wszystkie produkty
--osobna liczba zakupionych
--osobna ocena produktu
--wglad na wszystkie posty blogowe
--osobna liczba wyswietlen posta
--osobne oceny posta
--wglad na wszystkich userów
--wglad na wszystkich poduserow
--wyswietlenie w postaci 'profilu' wszystkich informacji o uzytkowniku, zmian, postow, komentarzy, itp.
+- wglad na wszystkie biegi
+- osobna liczba zapisanych na bieg
+- osobna ocena biegu
+- osobna liczba zapisanych na wolo
+- wglad na wszystkie produkty
+- osobna liczba zakupionych
+- osobna ocena produktu
+- wglad na wszystkie posty blogowe
+- osobna liczba wyswietlen posta
+- osobne oceny posta
+- wglad na wszystkich userów
+- wglad na wszystkich poduserow
+- wyswietlenie w postaci 'profilu' wszystkich informacji o uzytkowniku, zmian, postow, komentarzy, itp.
 
 29. Informacje o stronie (dla kazdego)
--informacje i stronie
--dzialanie strony
--kontakt 
--pomoc 
--sponsorowanie 
+- informacje i stronie
+- dzialanie strony
+- kontakt 
+- pomoc 
+- sponsorowanie 
 
 30. wersja strony (dla kazdego)
--lista abdejtow (z bazy danych)
--nazwy abdejtow
--opis abdejtow
--data abdejtow
+- lista abdejtow (z bazy danych)
+- nazwy abdejtow
+- opis abdejtow
+- data abdejtow
 
 31. prawa autorskie (dla kazdego)
--prawa autorskie strony
--przekierowanie do wlasciciela
+- prawa autorskie strony
+- przekierowanie do wlasciciela
 
 32. Newsleeter (dla kazdego)
--po jakims czasie wyskakuje okienko dla niezalogowanych, nie bedacych na liscie, nie miejacych ciasteczka "web"
--miejsce na emaila
--regulamin serwisu
+- po jakims czasie wyskakuje okienko dla niezalogowanych, nie bedacych na liscie, nie miejacych ciasteczka "web"
+- miejsce na emaila
+- regulamin serwisu
 
 33. Cookies (dla kazdego)
--pojawia sie od razu po otwarciu witryny, gdy nie ma ciasteczka "web"
--regulamin serwisu
--akceptacja warunkow serwisu
+- pojawia sie od razu po otwarciu witryny, gdy nie ma ciasteczka "web"
+- regulamin serwisu
+- akceptacja warunkow serwisu
 
 34. Bład 404 (dla kazdego)
--komunikat o nie istnieniu danej podstrony
--kontakt do wlasciciela w celu powiadomienia a mozliwosci zaistnienia bledu
--przekierowanie na poprzednia strone
--przekierowanie na strone glowna
+- komunikat o nie istnieniu danej podstrony
+- kontakt do wlasciciela w celu powiadomienia a mozliwosci zaistnienia bledu
+- przekierowanie na poprzednia strone
+- przekierowanie na strone glowna
 
 35. Powiadomienia (dla zalogowanego, wlasciciela)
--zakupienie produktu
--zapisanie sie na bieg
--nowy bieg
--nowy wynik (usera, podopiecznego)
--przecena (biegu, produktu)
--zaproszenie do znajomych
--zaakceptowanie zaproszenia
+- zakupienie produktu
+- zapisanie sie na bieg
+- nowy bieg
+- nowy wynik (usera, podopiecznego)
+- przecena (biegu, produktu)
+- zaproszenie do znajomych
+- zaakceptowanie zaproszenia
 
 36. Wyszukiwanie usera (dla zalogowanego)
--dla zalogowanych
--wyszukiwanie userow, poduserow
--po imieniu i nazwisku
--wyniki podobne do tego co sie wpisalo
--po nacisnieciu przekierowanie na profil (usera, podusera)
+- dla zalogowanych
+- wyszukiwanie userow, poduserow
+- po imieniu i nazwisku
+- wyniki podobne do tego co sie wpisalo
+- po nacisnieciu przekierowanie na profil (usera, podusera)
 
 37. Blog (dla kazdego)
--lista wpisow
--zdjecie
--tytol
--krotki opis
+- lista wpisow
+- zdjecie
+- tytol
+- krotki opis
 
 38. Blog post (dla kazdego)
--pojedynczy wpis
--tytol
--opis
--ocena w gwiazdkach
--liczba przeczytan
--zdjecia
+- pojedynczy wpis
+- tytol
+- opis
+- ocena w gwiazdkach
+- liczba przeczytan
+- zdjecia
 
 39. Znajomi wyniki (dla zalogowanego, wlasciciela)
--wyniki z postami wszystkich znajomych
+- wyniki z postami wszystkich znajomych
 
 --------------------------------------------------------------------
 
@@ -311,7 +311,7 @@ Grafika:
 - zdjecie trasy z miasteczkiem
 - wizualizacje z parku do wykorzystania na stronie
 - proste grafiki do gridowania na stronie
--artykuły do sklepu (po ok.2 zdjecia na produkt)
+- artykuły do sklepu (po ok.2 zdjecia na produkt)
 
 --------------------------------------------------------------------
 
