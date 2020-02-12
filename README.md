@@ -318,14 +318,14 @@ Grafika:
 Animacje: 
 
 - proste łatwe animacje nie obciążające:
-: na labele (przy złych danych się zatrzęsie i zmieni kolor)
-_ przy błędych danych w formolazach cofnięcie do złego labela i animacja powyzej z tekstem co źle
-: na texty (wjeżdzające)
-: gradient tła z efektem krzywego zakończenia (wyjeżdżajacy od boku)
-: na przyciski(estetyczny prosty)
-: na hamburgera 
-: na elementy do aktywacji (do naciśnięcia)
-: przy wchodzeniu na strone efekt wjeżdżania
+- na labele (przy złych danych się zatrzęsie i zmieni kolor)
+- przy błędych danych w formolazach cofnięcie do złego labela i animacja powyzej z tekstem co źle
+- na texty (wjeżdzające)
+- gradient tła z efektem krzywego zakończenia (wyjeżdżajacy od boku)
+- na przyciski(estetyczny prosty)
+- na hamburgera 
+- na elementy do aktywacji (do naciśnięcia)
+- przy wchodzeniu na strone efekt wjeżdżania
 
 --------------------------------------------------------------------
 
@@ -690,58 +690,58 @@ Tebele:
 
 ÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷
 
--Kazda tabela ma swoje unikalne ID
--userid (unikatowy numer uzytkownika)
--productid (unikatowy numer produktu)
--zamowienieid (unikatowy numer zamowienia)
--commentid (unikatowy numer komentarza)
--undercommentid (unikatowy numer podkomentarza)
--underuserid (unikatowy numer podopiecznego)
--postid (unikatowy numer postu na blogu)
+- Kazda tabela ma swoje unikalne ID
+- userid (unikatowy numer uzytkownika)
+- productid (unikatowy numer produktu)
+- zamowienieid (unikatowy numer zamowienia)
+- commentid (unikatowy numer komentarza)
+- undercommentid (unikatowy numer podkomentarza)
+- underuserid (unikatowy numer podopiecznego)
+- postid (unikatowy numer postu na blogu)
 
 --------------------------------------------------------------------
 
 Zastosowane technologie:
 
--objekty
--klasy
--destruktory
--funkcje
+- objekty
+- klasy
+- destruktory
+- funkcje
 
 --------------------------------------------------------------------
 
 Pomysły:
 
--logowanie w hamburger menu
--animacja wczytywania strony
--animacja na elementy
--zniżki
--pokazywanie aktywności (aktywny, ile temu)
+- logowanie w hamburger menu
+- animacja wczytywania strony
+- animacja na elementy
+- zniżki
+- pokazywanie aktywności (aktywny, ile temu)
 
 --------------------------------------------------------------------
 
 Emaile:
 
--potwierdzenie konta
--zmiana hasła
--przypomnienie hasła
--zapisanie sie na bieg (biegacz)
--zapisanie aie na bieg (wolontariusz)
--zamowienie produktu
--dezaktywacja
--newsletter
--nowy wynik
--nowe logowanie
+- potwierdzenie konta
+- zmiana hasła
+- przypomnienie hasła
+- zapisanie sie na bieg (biegacz)
+- zapisanie aie na bieg (wolontariusz)
+- zamowienie produktu
+- dezaktywacja
+- newsletter
+- nowy wynik
+- nowe logowanie
 
 --------------------------------------------------------------------
 
 Okienka:
 
--cookies
--newsletter
--wylogowywanie
--dodanie produktu do koszyka
--przegladanie zdjec
--dodawanie, edycja danych na profilu, postow, danych usera
--usowanie danych, postow, komentarzy, konta
--wyniki, lista startowa
+- cookies
+- newsletter
+- wylogowywanie
+- dodanie produktu do koszyka
+- przegladanie zdjec
+- dodawanie, edycja danych na profilu, postow, danych usera
+- usowanie danych, postow, komentarzy, konta
+- wyniki, lista startowa
