@@ -317,15 +317,15 @@ Grafika:
 
 Animacje: 
 
--proste łatwe animacje nie obciążające:
-:na labele (przy złych danych się zatrzęsie i zmieni kolor)
-:przy błędych danych w formolazach cofnięcie do złego labela i animacja powyzej z tekstem co źle
-:na texty (wjeżdzające)
-:gradient tła z efektem krzywego zakończenia (wyjeżdżajacy od boku)
-:na przyciski(estetyczny prosty)
-:na hamburgera 
-:na elementy do aktywacji (do naciśnięcia)
-:przy wchodzeniu na strone efekt wjeżdżania
+- proste łatwe animacje nie obciążające:
+: na labele (przy złych danych się zatrzęsie i zmieni kolor)
+_ przy błędych danych w formolazach cofnięcie do złego labela i animacja powyzej z tekstem co źle
+: na texty (wjeżdzające)
+: gradient tła z efektem krzywego zakończenia (wyjeżdżajacy od boku)
+: na przyciski(estetyczny prosty)
+: na hamburgera 
+: na elementy do aktywacji (do naciśnięcia)
+: przy wchodzeniu na strone efekt wjeżdżania
 
 --------------------------------------------------------------------
 
