@@ -395,33 +395,33 @@
 - id
 - userid
 - data ((ustawienia)(czas uniksowy w sekundach))
-- bio (1)
-- rekordy (2)
-- zdjecie profilowe (3)
-- zdjecie w tle (4)
+- bio
+- rekordy
+- zdjecie profilowe
+- zdjecie w tle
 
 7. uzytkownicy-profil-bio-historia
 - id
 - userid
-- data ((ustawienia poprzedniego)(czas uniksowy w sekundach))
+- data ((dodania poprzedniego)(czas uniksowy w sekundach))
 - bio
 
 8. uzytkownicy-profil-rekordy-historia
 - id
 - userid
-- data ((ustawienia poprzedniego)(czas uniksowy w sekundach))
+- data ((dodania poprzedniego)(czas uniksowy w sekundach))
 - rekordy
 
 9. uzytkownicy-profil-profilowe-historia
 - id
 - userid
-- data ((ustawienia poprzedniego)(czas uniksowy w sekundach))
+- data ((dodania poprzedniego)(czas uniksowy w sekundach))
 - zdjecie profilowe
 
 10. uzytkownicy-profil-tlo-historia
 - id
 - userid
-- data ((ustawienia poprzedniego)(czas uniksowy w sekundach))
+- data ((dodania poprzedniego)(czas uniksowy w sekundach))
 - zdjecie w tle
 
 11. uzytkownicy-posty
@@ -436,7 +436,7 @@
 - id
 - userid
 - productid
-- data ((ustawienia poprzedniego)(czas uniksowy w sekundach))
+- data ((dodania poprzedniego)(czas uniksowy w sekundach))
 - opis
 - zdjecie
 
@@ -448,7 +448,7 @@
 - data ((dodania)(czas uniksowy w sekundach))
 
 14. uzytkownicy-podkomentarze (wyniki na profilach)
-- undercommentid (klucz glowny, id podkomentarza)
+- undercommentid (klucz glowny)
 - commentid (dla poziomu 2 taki sam jak dla 1)
 - commenter (kto skomentowal (userid))
 - komentarz
@@ -517,7 +517,7 @@
 - userid (id opiekuna, 10 podopiecznych na osobe)
 - imie
 - nazwisko
-- rok
+- data (urodzenia (stan uniksowy w sekundach))
 - stan (podopieczny, usuniety)
 
 23. uzytkownicy-znajomi
@@ -670,7 +670,7 @@
 
 42. blog
 - postid (klucz glowny)
-- nazwa
+- tytol
 - tekst
 - data (czas uniksowy w sekundach)
 - wyswietlenia (ilosc wyswietlen posta)
