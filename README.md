@@ -332,361 +332,361 @@
 # Tebele:
 
 1. uzytkownicy-logowanie (zwykly, fb, google)
-/userid (klucz glowny tabeli)
-/email
-/haslo (dla fb="fb", dla gog="google")
-/potwierdzenie konta (tak, nie)
-/dezaktywacja (tak, nie)
-/imie
-/nazwisko
+- userid (klucz glowny tabeli)
+- email
+- haslo (dla fb="fb", dla gog="google")
+- potwierdzenie konta (tak, nie)
+- dezaktywacja (tak, nie)
+- imie
+- nazwisko
 
 2. uzytkownicy-dane
-/id
-/userid
-/data ((zmiany)(czas uniksowy w sekundach))
-/telefon
-/kraj
-/miasto
-/ulica
-/numer
-/kod
-/klub
-/regulamin serwisu (tak)
-/wiek (czas uniksowy w sekundach)
-/plec
-/rozmiar koszulki
+- id
+- userid
+- data ((zmiany)(czas uniksowy w sekundach))
+- telefon
+- kraj
+- miasto
+- ulica
+- numer
+- kod
+- klub
+- regulamin serwisu (tak)
+- wiek (czas uniksowy w sekundach)
+- plec
+- rozmiar koszulki
 
 3. uzytkownicy-dane-historia
-/id
-/userid
-/data ((dodania poprzedniego)(czas uniksowy w sekundach))
-/email
-/haslo
-/imie
-/nazwisko
-/telefon
-/kraj
-/miasto
-/ulica
-/numer
-/kod
-/klub
-/plec
-/rozmiar koszulki
+- id
+- userid
+- data ((dodania poprzedniego)(czas uniksowy w sekundach))
+- email
+- haslo
+- imie
+- nazwisko
+- telefon
+- kraj
+- miasto
+- ulica
+- numer
+- kod
+- klub
+- plec
+- rozmiar koszulki
 
 4. uzytkownicy-logowanie-logi (tylko ostatnie logowanie)
-/id
-/userid
-/data ((logowania)(czas uniksowy w sekundach))
-/sesja (czas uniksowy w sekundach o 600s do przodu, od ostatniego ruchu na stronie usera, jezeli przez 10 min nic nie zrobil/wylogowal sie to automatycznie uznaje sie go za nieaktywnego)
-/przegladarka
-/ip
-/uzadzenie
+- id
+- userid
+- data ((logowania)(czas uniksowy w sekundach))
+- sesja (czas uniksowy w sekundach o 600s do przodu, od ostatniego ruchu na stronie usera, jezeli przez 10 min nic nie zrobil/wylogowal sie to automatycznie uznaje sie go za nieaktywnego)
+- przegladarka
+- ip
+- uzadzenie
 
 5. uzytkownicy-rejestracja-logi
-/id
-/userid
-/data ((rejestracji)(czas uniksowy w sekundach))
-/przegladarka
-/ip
-/urzadzenie
+- id
+- userid
+- data ((rejestracji)(czas uniksowy w sekundach))
+- przegladarka
+- ip
+- urzadzenie
 
 6. uzytkownicy-profil-informacje
-/id
-/userid
-/data ((ustawienia)(czas uniksowy w sekundach))
-/bio (1)
-/rekordy (2)
-/zdjecie profilowe (3)
-/zdjecie w tle (4)
+- id
+- userid
+- data ((ustawienia)(czas uniksowy w sekundach))
+- bio (1)
+- rekordy (2)
+- zdjecie profilowe (3)
+- zdjecie w tle (4)
 
 7. uzytkownicy-profil-bio-historia
-/id
-/userid
-/data ((ustawienia poprzedniego)(czas uniksowy w sekundach))
-/bio
+- id
+- userid
+- data ((ustawienia poprzedniego)(czas uniksowy w sekundach))
+- bio
 
 8. uzytkownicy-profil-rekordy-historia
-/id
-/userid
-/data ((ustawienia poprzedniego)(czas uniksowy w sekundach))
-/rekordy
+- id
+- userid
+- data ((ustawienia poprzedniego)(czas uniksowy w sekundach))
+- rekordy
 
 9. uzytkownicy-profil-profilowe-historia
-/id
-/userid
-/data ((ustawienia poprzedniego)(czas uniksowy w sekundach))
-/zdjecie profilowe
+- id
+- userid
+- data ((ustawienia poprzedniego)(czas uniksowy w sekundach))
+- zdjecie profilowe
 
 10. uzytkownicy-profil-tlo-historia
-/id
-/userid
-/data ((ustawienia poprzedniego)(czas uniksowy w sekundach))
-/zdjecie w tle
+- id
+- userid
+- data ((ustawienia poprzedniego)(czas uniksowy w sekundach))
+- zdjecie w tle
 
 11. uzytkownicy-posty
-/id
-/userid
-/productid (wynik z danego biegu)
-/data ((dodania)(czas uniksowy w sekundach))
-/opis
-/zdjecie
+- id
+- userid
+- productid (wynik z danego biegu)
+- data ((dodania)(czas uniksowy w sekundach))
+- opis
+- zdjecie
 
 12. uzytkownicy-posty-historia
-/id
-/userid
-/productid
-/data ((ustawienia poprzedniego)(czas uniksowy w sekundach))
-/opis
-/zdjecie
+- id
+- userid
+- productid
+- data ((ustawienia poprzedniego)(czas uniksowy w sekundach))
+- opis
+- zdjecie
 
 13. uzytkownicy-komentarze (wyniki na profilach)
-/commentid (klucz glowny)
-/owner (id wlasciciela profilu)
-/commenter (kto skomentowal (userid))
-/komentarz
-/data ((dodania)(czas uniksowy w sekundach))
+- commentid (klucz glowny)
+- owner (id wlasciciela profilu)
+- commenter (kto skomentowal (userid))
+- komentarz
+- data ((dodania)(czas uniksowy w sekundach))
 
 14. uzytkownicy-podkomentarze (wyniki na profilach)
-/undercommentid (klucz glowny, id podkomentarza)
-/commentid (dla poziomu 2 taki sam jak dla 1)
-/commenter (kto skomentowal (userid))
-/komentarz
-/data ((dodania)(czas uniksowy w sekundach))
+- undercommentid (klucz glowny, id podkomentarza)
+- commentid (dla poziomu 2 taki sam jak dla 1)
+- commenter (kto skomentowal (userid))
+- komentarz
+- data ((dodania)(czas uniksowy w sekundach))
 
 15. uzytkownicy-komentarze-historia
-/id
-/commentid
-/undercommentid (jesli podkomentarz)
-/komentarz
-/data ((dodania poprzedniego)(czas uniksowy w sekundach))
+- id
+- commentid
+- undercommentid (jesli podkomentarz)
+- komentarz
+- data ((dodania poprzedniego)(czas uniksowy w sekundach))
 
 16. uzytkownicy-oceny (wyniki na profilach)
-/id
-/productid (id biegu (postu) kotry zostal oceniony)
-/owner (id wlasciciela profilu)
-/evaluative (kto ocenil (userid))
-/data ((oceny)(czas uniksowy w sekundach))
-/stan (lubi, nielubi, odocenione)
+- id
+- productid (id biegu (postu) kotry zostal oceniony)
+- owner (id wlasciciela profilu)
+- evaluative (kto ocenil (userid))
+- data ((oceny)(czas uniksowy w sekundach))
+- stan (lubi, nielubi, odocenione)
 
 17. uzytkownicy-produkty-gwiazdki
-/id
-/userid
-/productid
-/data ((oceny)(czas uniksowy w sekundach))
-/ocena
+- id
+- userid
+- productid
+- data ((oceny)(czas uniksowy w sekundach))
+- ocena
 
 18. uzytkownicy-rabaty
-/id
-/userid (id osoby do ktorej nalezy produkt, jesli zakupiony jako bon to puste pole)
-/productid (na co znizka)
-/kod rabatowy (zakodowany ciag znakow)
-/wartosc (% znizki na produkt)
-/stan (wykorzysteny, niewykorzystany)
+- id
+- userid (id osoby do ktorej nalezy produkt, jesli zakupiony jako bon to puste pole)
+- productid (na co znizka)
+- kod rabatowy (zakodowany ciag znakow)
+- wartosc (% znizki na produkt)
+- stan (wykorzysteny, niewykorzystany)
 
 19. uzytkownicy-powiadomienia
-/id
-/userid
-/data ((wyslania)(czas uniksowy w sekundach))
-/tresc
-/przekierowanie
-/stan (wyswietlone, niewyswietlone, usuniete)
+- id
+- userid
+- data ((wyslania)(czas uniksowy w sekundach))
+- tresc
+- przekierowanie
+- stan (wyswietlone, niewyswietlone, usuniete)
 
 20. urzytkownicy-zamowienia
-/zamowienieid (klucz glowny)
-/userid
-/productid 
-/data ((zamowienia)(czas uniksowy w sekundach))
-/ilosc
-/kolor
-/rozmiar
-/kod rabatowy
-/cena bez rabatu
-/cena z rabatem
-/stan (oczekuje, w trakcie, wyslane, dostarczone)
+- zamowienieid (klucz glowny)
+- userid
+- productid 
+- data ((zamowienia)(czas uniksowy w sekundach))
+- ilosc
+- kolor
+- rozmiar
+- kod rabatowy
+- cena bez rabatu
+- cena z rabatem
+- stan (oczekuje, w trakcie, wyslane, dostarczone)
 
 21. urzytkownicy-koszyk
-/id
-/userid
-/data ((dodania)(czas uniksowy w sekundach))
-/productid
-/stan (aktywny, usuniety)
+- id
+- userid
+- data ((dodania)(czas uniksowy w sekundach))
+- productid
+- stan (aktywny, usuniety)
 
 22. uzytkownicy-podopieczni
-/underuserid (klucz glowny)
-/userid (id opiekuna, 10 podopiecznych na osobe)
-/imie
-/nazwisko
-/rok
-/stan (podopieczny, usuniety)
+- underuserid (klucz glowny)
+- userid (id opiekuna, 10 podopiecznych na osobe)
+- imie
+- nazwisko
+- rok
+- stan (podopieczny, usuniety)
 
 23. uzytkownicy-znajomi
-/id
-/data ((zmiany stanu)(czas uniksowy w sekundach))
-/adding (userid osoby ktora zaprosila)
-/stan dla zaproszonego (znajomi, zaakceptuj, wyslales, odrzuciles, nieznajomi, usunoles)
-/invited (userid osoby ktora zostala zaproszona)
-/stan dla zapraszajacego (znajomi, zaakceptuj, wyslales, odrzuciles, nieznajomi, usunoles)
-/changing ((userid osoby ktora ostatnio zmienila stan)(wyslala, zaakceptowala, usunela, odrzucila))
+- id
+- data ((zmiany stanu)(czas uniksowy w sekundach))
+- adding (userid osoby ktora zaprosila)
+- stan dla zaproszonego (znajomi, zaakceptuj, wyslales, odrzuciles, nieznajomi, usunoles)
+- invited (userid osoby ktora zostala zaproszona)
+- stan dla zapraszajacego (znajomi, zaakceptuj, wyslales, odrzuciles, nieznajomi, usunoles)
+- changing ((userid osoby ktora ostatnio zmienila stan)(wyslala, zaakceptowala, usunela, odrzucila))
 
 24. uzytkownicy-cookies
-/id
-/stan (tak)
-/data ((wejscia)(czas uniksowy w sekundach))
-/uzadzenie
-/ip
-/przegladarka
+- id
+- stan (tak)
+- data ((wejscia)(czas uniksowy w sekundach))
+- uzadzenie
+- ip
+- przegladarka
 
 25. urzytkownicy-newsleeter
-/id
-/userid (jezeli email przypisany do konta)
-/data ((zapisania sie)(czas uniksowy w sekundach))
-/stan (czy na liscie, czy sie usunal)
-/adres email
+- id
+- userid (jezeli email przypisany do konta)
+- data ((zapisania sie)(czas uniksowy w sekundach))
+- stan (czy na liscie, czy sie usunal)
+- adres email
 
 26. admin-logowanie
-/id
-/email
-/haslo
-/generowany kod (wysylany na emaila zawsze po udanym zalogowaniu)
+- id
+- email
+- haslo
+- generowany kod (wysylany na emaila zawsze po udanym zalogowaniu)
 
 27. admin-logi (wszystkie logi)
-/id
-/data (czas uniksowy w sekundach)
-/ip
-/uzadzenie
-/przegladarka
-/wynik logowania
-/generowany kod
+- id
+- data (czas uniksowy w sekundach)
+- ip
+- uzadzenie
+- przegladarka
+- wynik logowania
+- generowany kod
 
 28. admin-statystyki
-/id
-/Aktywni urzytkownicy
-/Wszyscy urzytkownicy
-/Laczna ilosc logowan urzytkownikow
-/Wyswietlenia strony wszystkie
-/Wyswietlenia strony na podstawie ciasteczek
+- id
+- Aktywni urzytkownicy
+- Wszyscy urzytkownicy
+- Laczna ilosc logowan urzytkownikow
+- Wyswietlenia strony wszystkie
+- Wyswietlenia strony na podstawie ciasteczek
 
 29. produkty-przypisanie
-/productid (klucz glowny)
-/przypisanie (bieg, produkt)
+- productid (klucz glowny)
+- przypisanie (bieg, produkt)
 
 30. produkty-informacje
-/id
-/productid
-/nazwa produktu
-/opis produktu
-/cena aktualna
-/cena przed obnizka
+- id
+- productid
+- nazwa produktu
+- opis produktu
+- cena aktualna
+- cena przed obnizka
 
 31. produkty-kolory
-/id
-/productid
-/kolor produktu
+- id
+- productid
+- kolor produktu
 
 32. produkty-rozmiary
-/id
-/productid
-/rozmiar produktu
+- id
+- productid
+- rozmiar produktu
 
 33. produkty-zdjecia
-/id
-/productid
-/nazwa zdjecia
-/zdjecie produktu
+- id
+- productid
+- nazwa zdjecia
+- zdjecie produktu
 
 34. biegi-informacje
-/id
-/productid
-/nazwa biegu
-/opis biegu
-/data ((biegu)(czas uniksowy w sekundach))
-/miejsce
-/regulamin bieg
-/regulamin wolo
-/cena aktualna
-/cena przed obnizka
+- id
+- productid
+- nazwa biegu
+- opis biegu
+- data ((biegu)(czas uniksowy w sekundach))
+- miejsce
+- regulamin bieg
+- regulamin wolo
+- cena aktualna
+- cena przed obnizka
 
 35. biegi-dystanse
-/id
-/productid
-/dystans biegu
+- id
+- productid
+- dystans biegu
 
 36. biegi-zdjecia
-/id
-/productid
-/nazwa zdjecia
-/zdjecie biegu
+- id
+- productid
+- nazwa zdjecia
+- zdjecie biegu
 
 37. biegi-lista-startowa
-/id
-/userid (id osoby, id opiekuna)
-/underuserid (jezeli jest podopiecznym)
-/productid
-/regulamin bieg (tak)
-/data ((zapisu na bieg)(czas uniksowy w sekundach))
-/numer startowy
-/kat wiekowa
-/dystans
+- id
+- userid (id osoby, id opiekuna)
+- underuserid (jezeli jest podopiecznym)
+- productid
+- regulamin bieg (tak)
+- data ((zapisu na bieg)(czas uniksowy w sekundach))
+- numer startowy
+- kat wiekowa
+- dystans
 
 38. biegi-wyniki
-/id
-/productid
-/userid (id osoby, id opiekuna)
-/underuserid (jezeli jest podopiecznym)
-/numer startowy --
-/imie --
-/nazwisko --
-/rok --
-/kat wiekowa --
-/klub --
-/dystans --
-/msc open 
-/msc kat wiekowa
-/msc kat plec
-/czas netto
-/czas brotto
+- id
+- productid
+- userid (id osoby, id opiekuna)
+- underuserid (jezeli jest podopiecznym)
+- numer startowy --
+- imie --
+- nazwisko --
+- rok --
+- kat wiekowa --
+- klub --
+- dystans --
+- msc open 
+- msc kat wiekowa
+- msc kat plec
+- czas netto
+- czas brotto
 
 39. biegi-wolontariusze
-/id
-/productid
-/userid
-/data ((zapisu na wolo)(czas uniksowy w sekundach))
-/regulamin wolo (tak)
-/dodatkowe info (z kim chce byc)
+- id
+- productid
+- userid
+- data ((zapisu na wolo)(czas uniksowy w sekundach))
+- regulamin wolo (tak)
+- dodatkowe info (z kim chce byc)
 
 40. biegi-galeria-zdjec
-/id
-/productid
-/nazwa zdjecia
-/zdjecie
+- id
+- productid
+- nazwa zdjecia
+- zdjecie
 
 41. update
-/id
-/wersja
-/nazwa
-/opis
-/data (czas uniksowy w sekundach)
+- id
+- wersja
+- nazwa
+- opis
+- data (czas uniksowy w sekundach)
 
 42. blog
-/postid (klucz glowny)
-/nazwa
-/tekst
-/data (czas uniksowy w sekundach)
-/wyswietlenia (ilosc wyswietlen posta)
+- postid (klucz glowny)
+- nazwa
+- tekst
+- data (czas uniksowy w sekundach)
+- wyswietlenia (ilosc wyswietlen posta)
 
 43. blog-zdjecia
-/id
-/postid
-/nazwa zdjecia
-/zdjecie
+- id
+- postid
+- nazwa zdjecia
+- zdjecie
 
 44. blog-gwiazdki
-/id
-/userid
-/postid
-/data ((oceny)(czas uniksowy w sekundach))
-/ocena
+- id
+- userid
+- postid
+- data ((oceny)(czas uniksowy w sekundach))
+- ocena
 
 -------------------------------
 
