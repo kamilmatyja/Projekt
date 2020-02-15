@@ -344,12 +344,14 @@
 - id
 - userid
 - data ((zmiany)(czas uniksowy w sekundach))
+- kierunkowy
 - telefon
 - kraj
 - miasto
 - ulica
-- numer
-- kod
+- numer budynku
+- numer mieszkania
+- kod pocztowy
 - klub
 - regulamin serwisu (tak)
 - wiek (czas uniksowy w sekundach)
@@ -504,6 +506,18 @@
 - cena bez rabatu
 - cena z rabatem
 - stan (oczekuje, w trakcie, wyslane, dostarczone)
+
+20.5 uzytkownicy-zamowienia-adres
+- id
+- zamowienieid
+- platnosc (oplacono, za pobraniem)
+- wysylka (kurier, paczkomat, poczta itp)
+- kraj
+- miasto
+- ulica
+- numer budynku
+- numer mieszkania
+- kod pocztowy
 
 21. urzytkownicy-koszyk
 - id
