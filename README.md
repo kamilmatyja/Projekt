@@ -502,16 +502,17 @@
 - ilosc
 - kolor
 - rozmiar
+- sposob przesylki
 - kod rabatowy
 - cena bez rabatu
 - cena z rabatem
+- cena przesylki
+- platnosc (oplacono, za pobraniem)
 - stan (oczekuje, w trakcie, wyslane, dostarczone)
 
 20.5 uzytkownicy-zamowienia-adres
 - id
 - zamowienieid
-- platnosc (oplacono, za pobraniem)
-- wysylka (kurier, paczkomat, poczta itp)
 - kraj
 - miasto
 - ulica
