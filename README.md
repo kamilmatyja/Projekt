@@ -119,11 +119,15 @@
 - miejsce na bon rabatowy
 - cena z bonem
 - cena bez bonu
+- wybranie sposobu przesylki
+- cena z przesylka
+- cena przesylki
+- wybranie adresu przesylki (dowolny)
 
 19. zamowienie platnosc (dla zalogowanego, przekierowanie z zamowienia)
 - lista zamowienia
 - cena
-- platnosc
+- platnosc ^^^
 
 20. zamowienia usera (dla zalogowanego, wlasciciela)
 - lista zamowien usera
@@ -494,21 +498,26 @@
 - przekierowanie
 - stan (wyswietlone, niewyswietlone, usuniete)
 
-20. urzytkownicy-zamowienia
-- zamowienieid (klucz glowny)
+20. urzytkownicy-zamowienia-produkty
+- id
+- zamowienieid
 - userid
 - productid 
 - data ((zamowienia)(czas uniksowy w sekundach))
 - ilosc
 - kolor
 - rozmiar
+
+20.3 uzytkownicy-zamowienia-dane
+- zamowienieid (klucz glowny)
 - sposob przesylki
 - kod rabatowy
-- cena bez rabatu
-- cena z rabatem
-- cena przesylki
 - platnosc (oplacono, za pobraniem)
-- stan (oczekuje, w trakcie, wyslane, dostarczone)
+- stan (oczekuje, w trakcie, wyslane, dostarczono)
+- cena (cena przesylki)
+- cena (cena produktow)
+- cena (cena produktow z rabatem)
+- cena (ostateczna cena)
 
 20.5 uzytkownicy-zamowienia-adres
 - id
