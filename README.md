@@ -741,6 +741,7 @@
 - animacja na elementy
 - zniżki
 - pokazywanie aktywności (aktywny, ile temu)
+- dark wersion
 
 --------------------------------------------------------------------
 
