@@ -139,6 +139,10 @@
 - kolor
 - cena zamowienia
 
+20.5. przepisanie pakietu (dla zalogowanego, wlasciciela)
+- lista zamowionych biegow (przed startem)
+- przepisanie pakietu (na inne id usera)
+
 21. profil usera (dla zalogowanego, wlasciciela)
 - dodanie zdj profilowego
 - dodanie zdj w tle
@@ -170,6 +174,10 @@
 - lista oczekujacych
 - lista zaproszonych
 - mozliwosc zmiany stanu znajomego
+
+23.5. zablokowani usera (dla zalogowanego, wlasciciela)
+- lista zablokowanych
+- usuniecie z zablokowanych
 
 24. podopieczni usera (dla zalogowanego, wlasciciela)
 - profil opiekuna
@@ -502,13 +510,13 @@
 - id
 - zamowienieid
 - userid
-- productid 
+- productid (jezeli jest produktem)
 - data ((zamowienia)(czas uniksowy w sekundach))
 - ilosc
 - kolor
 - rozmiar
 
-20.3 uzytkownicy-zamowienia-dane
+21. uzytkownicy-zamowienia-dane
 - zamowienieid (klucz glowny)
 - sposob przesylki
 - kod rabatowy
@@ -519,7 +527,7 @@
 - cena (cena produktow z rabatem)
 - cena (ostateczna cena)
 
-20.5 uzytkownicy-zamowienia-adres
+22. uzytkownicy-zamowienia-adres
 - id
 - zamowienieid
 - kraj
@@ -529,14 +537,14 @@
 - numer mieszkania
 - kod pocztowy
 
-21. urzytkownicy-koszyk
+23. urzytkownicy-koszyk
 - id
 - userid
 - data ((dodania)(czas uniksowy w sekundach))
 - productid
 - stan (aktywny, usuniety)
 
-22. uzytkownicy-podopieczni
+24. uzytkownicy-podopieczni
 - underuserid (klucz glowny)
 - userid (id opiekuna, 10 podopiecznych na osobe)
 - imie
@@ -544,16 +552,16 @@
 - data (urodzenia (stan uniksowy w sekundach))
 - stan (podopieczny, usuniety)
 
-23. uzytkownicy-znajomi
+25. uzytkownicy-znajomi
 - id
 - data ((zmiany stanu)(czas uniksowy w sekundach))
 - adding (userid osoby ktora zaprosila)
-- stan dla zaproszonego (znajomi, zaakceptuj, wyslales, odrzuciles, nieznajomi, usunoles)
+- stan dla zaproszonego (znajomy, do zaakceptowania, wyslano, odrzucono, nieznajomy, usunieto, zablokowano)
 - invited (userid osoby ktora zostala zaproszona)
-- stan dla zapraszajacego (znajomi, zaakceptuj, wyslales, odrzuciles, nieznajomi, usunoles)
-- changing ((userid osoby ktora ostatnio zmienila stan)(wyslala, zaakceptowala, usunela, odrzucila))
+- stan dla zapraszajacego (znajomy, do zaakceptowania, wyslano, odrzucono, nieznajomy, usunieto, zablokowano)
+- changing (userid osoby ktora ostatnio zmienila stan)
 
-24. uzytkownicy-cookies
+26. uzytkownicy-cookies
 - id
 - stan (tak)
 - data ((wejscia)(czas uniksowy w sekundach))
@@ -561,20 +569,27 @@
 - ip
 - przegladarka
 
-25. urzytkownicy-newsleeter
+27. urzytkownicy-newsleeter
 - id
 - userid (jezeli email przypisany do konta)
 - data ((zapisania sie)(czas uniksowy w sekundach))
 - stan (czy na liscie, czy sie usunal)
 - adres email
 
-26. admin-logowanie
+28. uzytkownicy-przepisanie-pakietu
+- id
+- zamowienieid (id biegu)
+- userid (id wlasciciela)
+- succesor (id osoby do przepisania)
+- data ((zmiany)(czas uniksowy w sekundach)
+
+29. admin-logowanie
 - id
 - email
 - haslo
 - generowany kod (wysylany na emaila zawsze po udanym zalogowaniu)
 
-27. admin-logi (wszystkie logi)
+30. admin-logi (wszystkie logi)
 - id
 - data (czas uniksowy w sekundach)
 - ip
@@ -583,7 +598,7 @@
 - wynik logowania
 - generowany kod
 
-28. admin-statystyki
+31. admin-statystyki
 - id
 - Aktywni urzytkownicy
 - Wszyscy urzytkownicy
@@ -591,11 +606,11 @@
 - Wyswietlenia strony wszystkie
 - Wyswietlenia strony na podstawie ciasteczek
 
-29. produkty-przypisanie
+32. produkty-przypisanie
 - productid (klucz glowny)
 - przypisanie (bieg, produkt)
 
-30. produkty-informacje
+33. produkty-informacje
 - id
 - productid
 - nazwa produktu
@@ -603,23 +618,23 @@
 - cena aktualna
 - cena przed obnizka
 
-31. produkty-kolory
+34. produkty-kolory
 - id
 - productid
 - kolor produktu
 
-32. produkty-rozmiary
+35. produkty-rozmiary
 - id
 - productid
 - rozmiar produktu
 
-33. produkty-zdjecia
+36. produkty-zdjecia
 - id
 - productid
 - nazwa zdjecia
 - zdjecie produktu
 
-34. biegi-informacje
+37. biegi-informacje
 - id
 - productid
 - nazwa biegu
@@ -631,29 +646,30 @@
 - cena aktualna
 - cena przed obnizka
 
-35. biegi-dystanse
+38. biegi-dystanse
 - id
 - productid
 - dystans biegu
 
-36. biegi-zdjecia
+39. biegi-zdjecia
 - id
 - productid
 - nazwa zdjecia
 - zdjecie biegu
 
-37. biegi-lista-startowa
+40. biegi-lista-startowa
 - id
 - userid (id osoby, id opiekuna)
 - underuserid (jezeli jest podopiecznym)
-- productid
+- productid (id biegu)
+- zamowienieid (id zamowienia)
 - regulamin bieg (tak)
 - data ((zapisu na bieg)(czas uniksowy w sekundach))
 - numer startowy
 - kat wiekowa
 - dystans
 
-38. biegi-wyniki
+41. biegi-wyniki
 - id
 - productid
 - userid (id osoby, id opiekuna)
@@ -671,7 +687,7 @@
 - czas netto
 - czas brotto
 
-39. biegi-wolontariusze
+42. biegi-wolontariusze
 - id
 - productid
 - userid
@@ -679,33 +695,33 @@
 - regulamin wolo (tak)
 - dodatkowe info (z kim chce byc)
 
-40. biegi-galeria-zdjec
+43. biegi-galeria-zdjec
 - id
 - productid
 - nazwa zdjecia
 - zdjecie
 
-41. update
+44. update
 - id
 - wersja
 - nazwa
 - opis
 - data (czas uniksowy w sekundach)
 
-42. blog
+45. blog
 - postid (klucz glowny)
 - tytol
 - tekst
 - data (czas uniksowy w sekundach)
 - wyswietlenia (ilosc wyswietlen posta)
 
-43. blog-zdjecia
+46. blog-zdjecia
 - id
 - postid
 - nazwa zdjecia
 - zdjecie
 
-44. blog-gwiazdki
+47. blog-gwiazdki
 - id
 - userid
 - postid
