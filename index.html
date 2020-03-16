@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+    <title>Sprinty</title>
+
+    <meta charset="utf-8">
+    <meta name="description" content="Biegi" />
+    <meta name="keywords" content="Biegi" />
+    <meta name="author" content="Kamil Matyja" />
+    <meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1" />
+    <meta name="handheldFriendly" content="true" />
+    <meta name="MobileOptimized" content="240" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#E09D00" />
+
+    <link rel="stylesheet" href="Styles/main.css">
+    <link rel="shortcut icon" href="Images/Logo/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/ffd500fd7a.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <div class="container-xl">
+
+        <a href="#" id="scrollup"><i class="fas fa-angle-up"></i></a>
+
+        <nav>
+
+            <div class="nav-background">
+
+                <button class="hamburger">
+
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner">
+                        </span>
+                    </span>
+
+                </button>
+
+                <div class="navigation" id="navigacja">
+
+                    <div class="nav-actions">
+                        <a href="../userSign.php">
+                            <div class="nav-action">
+                                <i class="fas fa-user"></i>
+                                <p class="text-s">Logowanie</p>
+                            </div>
+                        </a>
+                        <a href="../userRegister.php">
+                            <div class="nav-action">
+                                <i class="fas fa-user-plus"></i>
+                                <p class="text-s">Rejestracja</p>
+                            </div>
+                        </a>
+                        <a href="../webInformation.php">
+                            <div class="nav-action">
+                                <i class="fas fa-info"></i>
+                                <p class="text-s">Informacje</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <ul class="navigation-list">
+                        <li class="navigation-item"><a href="../raceIndex.php" onclick="closeNav()"><div class="nav-icona"><i class="fas fa-running"></i></div>Biegi</a></li>
+                        <li class="navigation-item"><a href="../shopIndex.php" onclick="closeNav()"><div class="nav-icona"><i class="fas fa-shopping-cart"></i></div>Sklep</a></li>
+                        <li class="navigation-item"><a href="../blogIndex.php" onclick="closeNav()"><div class="nav-icona"><i class="far fa-newspaper"></i></div>Blog</a></li>
+                        <li class="navigation-item"><a href="../raceVolunteering.php" onclick="closeNav()"><div class="nav-icona"><i class="fas fa-hands-helping"></i></div>Wolontariat</a></li>
+                    </ul>
+
+                    <div class="socialmedia">
+                            <a href="https://youtube.com">
+                                <div class="social">
+                                    <i class="fab fa-youtube"></i>
+                                </div>
+                            </a>
+                            <a href="https://facebook.com">
+                                <div class="social">
+                                    <i class="fab fa-facebook-f"></i>
+                                </div>
+                            </a>
+                            <a href="https://instagram.com">
+                                <div class="social">
+                                    <i class="fab fa-instagram"></i>
+                                </div>
+                            </a>
+                            <a href="https://twitter.com">
+                                <div class="social">
+                                    <i class="fab fa-twitter"></i>
+                                </div>
+                            </a>
+                    </div>
+
+                </div>
+
+                <img src="Images/Logo/logo.png" class="logo" />
+
+                <div class="nav-search">
+                    <form method="get" action="search.php">
+                        <input type="text" class="search-input" />
+                        <i class="fas fa-search"><input hidden type="submit" /></i>
+                    </form>
+                </div>
+
+                <a href="../userProfile.php">
+                    <div class="nav-profile">
+                        <i class="fas fa-user"></i>
+                        <p class="text-s">Profil</p>
+                    </div>
+                </a>
+            </div>
+
+        </nav>
+
+        <header>
+
+            <div class="margin-nav"></div>
+
+            <img src="Images/slider1.jpg" class="slider" />
+
+        </header>
+
+        <article>
+
+            <div class="hero">
+
+                <h2 class="text-xl">Zawody <br /> Wyniki <br /> Blog</h2>
+
+            </div>
+
+        </article>
+
+        <article>
+
+            <h3 class="text-l">Najbliższy Bieg</h3>
+            <div class="race-section">
+
+                <div class="race-half-section" id="race-1">
+                    <div class="race-halfs-section" id="races-1">
+                        <p class="text-m" id="date">11 Września 2020</p><br />
+                        <p class="text-m" id="place">Poznań, Park Sołacki</p><br />
+                        <p class="text-m" id="description">
+                            Mistrzostwa Wielkopolski w biegach przełajowych na dystansach 5 i 10 kilometrów.
+                            Start o godzinie 11.
+                        </p><br />
+                    </div>
+                    <div class="race-halfs-section" id="races-2">
+                        <a href="../race.php"><button class="button-s">Zapisz Się</button></a>
+                        <a href="../raceStartList.php"><button class="button-s">Lista Startowa</button></a>
+                        <a href="../raceRules.php"><button class="button-s">Regulamin</button></a>
+                    </div>
+                </div>
+                <div class="race-half-section" id="race-2">
+                    <img src="Images/MWPP.jpg" class="img-section" />
+                </div>
+            </div>
+
+        </article>
+
+        <div class="margin-m"></div>
+
+        <article>
+
+            <h3 class="text-l">Najnowszy Wpis</h3>
+            <div class="container-s">
+                <p class="text-m">
+                    Korona wirus i odwoływanie wszystkich biegów na świecie we wiosnę 2020!
+                    Zimą 2019 roku w Chinach pojawił się wirus CARS COV 2, który rozprzestrzenił się
+                    na cały świat przez co wszystkie biegi zostały przeniesione lub odwołane...
+                </p>
+            </div>
+            <a href="../webEnrollment.php"><button class="button-m">Zobacz Cały</button></a>
+
+        </article>
+
+        <div class="margin-m"></div>
+
+        <article>
+
+            <h3 class="text-l">Informacje</h3>
+            <div class="container-s">
+                <p class="text-m">
+                    Sprinty.pl jest to strona tworzona w celach nauki programowania oraz wpisu do portfolio,
+                    wszystkie biegi, produkty, wpisy blogowe itp. są jedynie przykładowe i nieprawdziwe!
+                </p>
+            </div>
+            <a href="../webInformation.php"><button class="button-m">Zobacz Więcej</button></a>
+
+        </article>
+
+        <div class="margin-l"></div>
+
+        <footer>
+
+            <div class="footer-background">
+
+                <h4 class="text-xs" id="footer-1"><a href="http://kamilmatyja.pl">Twórca: Kamil Matyja</a></h4>
+                <h4 class="text-xs" ><a href="../webCopyright.php">&copy; Sprinty.pl 2020 Wszelkie prawa zastrzeżone.</a></h4>
+                <h4 class="text-xs" ><a href="../webVersion.php">Wersja: 0.0.1</a></h4>
+
+            </div>
+
+        </footer>
+
+    </div>
+
+    <script src="Scripts/nav.js"></script>
+    <script src="Scripts/scrollup.js"></script>
+
+</body>
+</html>
