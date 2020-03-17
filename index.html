@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pl">
 <head>
 
@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#E09D00" />
 
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="Styles/main.css">
     <link rel="shortcut icon" href="Images/Logo/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
 
@@ -43,19 +43,19 @@
                 <div class="navigation" id="navigacja">
 
                     <div class="nav-actions">
-                        <a href="../userSign.php">
+                        <a href="../userSign.php" class="aaction">
                             <div class="nav-action">
                                 <i class="fas fa-user"></i>
                                 <p class="text-s">Logowanie</p>
                             </div>
                         </a>
-                        <a href="../userRegister.php">
+                        <a href="../userRegister.php" class="aaction">
                             <div class="nav-action">
                                 <i class="fas fa-user-plus"></i>
                                 <p class="text-s">Rejestracja</p>
                             </div>
                         </a>
-                        <a href="../webInformation.php">
+                        <a href="../webInformation.php" class="aaction">
                             <div class="nav-action">
                                 <i class="fas fa-info"></i>
                                 <p class="text-s">Informacje</p>
@@ -71,22 +71,22 @@
                     </ul>
 
                     <div class="socialmedia">
-                            <a href="https://youtube.com">
+                            <a href="https://youtube.com" class="asocial">
                                 <div class="social">
                                     <i class="fab fa-youtube"></i>
                                 </div>
                             </a>
-                            <a href="https://facebook.com">
+                            <a href="https://facebook.com" class="asocial">
                                 <div class="social">
                                     <i class="fab fa-facebook-f"></i>
                                 </div>
                             </a>
-                            <a href="https://instagram.com">
+                            <a href="https://instagram.com" class="asocial">
                                 <div class="social">
                                     <i class="fab fa-instagram"></i>
                                 </div>
                             </a>
-                            <a href="https://twitter.com">
+                            <a href="https://twitter.com" class="asocial">
                                 <div class="social">
                                     <i class="fab fa-twitter"></i>
                                 </div>
@@ -95,7 +95,7 @@
 
                 </div>
 
-                <img src="logo.png" class="logo" />
+                <img src="Images/Logo/logo.png" class="logo" />
 
                 <div class="nav-search">
                     <form method="get" action="search.php">
@@ -118,7 +118,7 @@
 
             <div class="margin-nav"></div>
 
-            <img src="slider1.jpg" class="slider" />
+            <img src="Images/slider1.jpg" class="slider" />
 
         </header>
 
@@ -144,17 +144,18 @@
                         <p class="text-m" id="description">
                             Mistrzostwa Wielkopolski w biegach przełajowych na dystansach 5 i 10 kilometrów.
                             Start o godzinie 11.
-                        </p><br />
+                        </p>
                     </div>
                     <div class="race-halfs-section" id="races-2">
-                        <a href="../race.php"><button class="button-s">Zapisz Się</button></a>
-                        <a href="../raceStartList.php"><button class="button-s">Lista Startowa</button></a>
-                        <a href="../raceRules.php"><button class="button-s">Regulamin</button></a>
+                        <div class="one-three" id="rac-1"><a href="../race.php"><button class="button-s">Zapisz Się</button></a></div>
+                        <div class="one-three"><a href="../raceStartList.php"><button class="button-s">Lista Startowa</button></a></div>
+                        <div class="one-three"><a href="../raceRules.php"><button class="button-s">Regulamin</button></a></div>
                     </div>
                 </div>
                 <div class="race-half-section" id="race-2">
-                    <img src="MWPP.jpg" class="img-section" />
+                    <img src="Images/MWPP.jpg" class="img-section" />
                 </div>
+
             </div>
 
         </article>
@@ -196,9 +197,15 @@
 
             <div class="footer-background">
 
-                <h4 class="text-xs" id="footer-1"><a href="http://kamilmatyja.pl">Twórca: Kamil Matyja</a></h4>
-                <h4 class="text-xs" ><a href="../webCopyright.php">&copy; Sprinty.pl 2020 Wszelkie prawa zastrzeżone.</a></h4>
-                <h4 class="text-xs" ><a href="../webVersion.php">Wersja: 0.0.1</a></h4>
+                <div class="footer-three">
+                    <h4 class="text-xs" id="footer-1"><a href="http://kamilmatyja.pl">Twórca: Kamil Matyja</a></h4>
+                </div>
+                <div class="footer-three">
+                    <h4 class="text-xs"><a href="../webCopyright.php">&copy; Sprinty.pl 2020 Wszelkie prawa zastrzeżone.</a></h4>
+                </div>
+                <div class="footer-three">
+                    <h4 class="text-xs"><a href="../webVersion.php">Wersja: 0.0.1</a></h4>
+                </div>
 
             </div>
 
@@ -206,8 +213,8 @@
 
     </div>
 
-    <script src="nav.js"></script>
-    <script src="scrollup.js"></script>
+    <script src="Scripts/nav.js"></script>
+    <script src="Scripts/scrollup.js"></script>
 
 </body>
 </html>
