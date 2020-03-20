@@ -1,24 +1,17 @@
-const hamburger = document.querySelector('.hamburger');
-const nav = document.querySelector('.navigation');
+var hamburger = document.querySelector('.hamburger');
+var nav = document.querySelector('.navigation');
+var close = document.querySelector('.close-nav');
 
-const handleClick = () => {
-    hamburger.classList.toggle('hamburger--active');
-    nav.classList.toggle('navigation--active');
-}
+hamburger.addEventListener('click', function() 
+{
+  hamburger.classList.toggle('hamburger--active');
+  nav.classList.toggle('navigation--active'); 
+  close.classList.toggle('close-nav--active');  
+});
 
-hamburger.addEventListener('click', handleClick);
-
-function closeNav() {
-    let x = document.getElementById("navigacja");
-
-    if (x.className === "navigation") {
-        x.className += " open";
-    }
-    else
-    {
-        x.className = "navigation";
-        hamburger.classList.toggle('hamburger--active');
-    }
-
-
-}
+close.addEventListener('click', function() 
+{
+    hamburger.classList.remove('hamburger--active');
+    nav.classList.remove('navigation--active');  
+    close.classList.remove('close-nav--active'); 
+});
