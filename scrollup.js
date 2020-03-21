@@ -1,4 +1,5 @@
 var scrollButton = document.querySelector('#scrollup');
+var scrollBackground = document.querySelector('.background-scrollup');
 
 window.addEventListener('scroll', function() 
 {
@@ -6,11 +7,15 @@ window.addEventListener('scroll', function()
 	{
 	    scrollButton.classList.remove('un-visible');
         scrollButton.classList.add('is-visible');
+		scrollBackground.classList.add('scrollup-visible');
+		scrollBackground.classList.remove('scrollup-un-visible');
     } 
 	else
 	{
         scrollButton.classList.remove('is-visible');
 	    scrollButton.classList.add('un-visible');
+		scrollBackground.classList.remove('scrollup-visible');
+		scrollBackground.classList.add('scrollup-un-visible');
     }    
 });  
 
