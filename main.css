@@ -839,10 +839,34 @@ ul {
     display: inline-block; } }
 
 .slider {
-  width: 100%; }
+  width: 100%;
+  height: 55vw; }
 
 header > .slider {
   margin-bottom: -4px; }
+
+.slider-container {
+  width: 100%;
+  height: 55vw; }
+
+.mySlides {
+  display: block; }
+
+.slider-animation {
+  -webkit-animation: anime 1s;
+  animation: anime 1s; }
+
+@-webkit-keyframes anime {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes anime {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 .button-s, .button-m, .button-l {
   border: 3px solid #fea600;
@@ -1199,39 +1223,46 @@ a {
   color: #000000;
   text-decoration: none; }
 
-.rating {
-  border: none;
-  float: left; }
-
-.rating > label:before {
-  font-size: 5vw;
+.wrapper {
   display: inline-block; }
 
-.rating > label {
+.wrapper input {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  opacity: 0; }
+
+.wrapper label {
+  position: relative;
   float: right;
-  color: #eeeeee; }
+  color: #000000;
+  -webkit-transition: color .2s ease-in-out;
+  -o-transition: color .2s ease-in-out;
+  transition: color .2s ease-in-out; }
 
-.rating > input:checked ~ label,
-.rating:not(:checked) > label:hover,
-.rating:not(:checked) > label:hover ~ label {
-  color: #ffea00; }
+.wrapper label:before {
+  display: inline-block;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
 
-.rating:not(:checked) > label {
-  color: #eeeeee; }
+.wrapper input:checked ~ label:before {
+  color: #ffea00;
+  -webkit-transition: color .2s ease-in-out;
+  -o-transition: color .2s ease-in-out;
+  transition: color .2s ease-in-out; }
 
-/*
+.wrapper label:hover ~ label:before,
+.wrapper label:hover:before {
+  color: #ffdb70;
+  -webkit-transition: color .2s ease-in-out;
+  -o-transition: color .2s ease-in-out;
+  transition: color .2s ease-in-out; }
 
-<form method="post" action="blogEnrollment.php" >
-<fieldset class="rating" >
-<label for="star5" > <i class="fas fa-star" > <input type="radio" id="star5" name="rating" value="5" / > </i > </label >
-<label for="star4" > <i class="fas fa-star" > <input type="radio" id="star4" name="rating" value="4" / > </i > </label >
-<label for="star3" > <i class="fas fa-star" > <input type="radio" id="star3" name="rating" value="3" / > </i > </label >
-<label for="star2" > <i class="fas fa-star" > <input type="radio" id="star2" name="rating" value="2" / > </i > </label >
-<label for="star1" > <i class="fas fa-star" > <input type="radio" id="star1" name="rating" value="1" / > </i > </label >
-</fieldset >
-</form >
-
-*/
 .fa-star {
   color: #000000;
   cursor: pointer;
@@ -1245,29 +1276,35 @@ a {
   -o-transition: color .2s ease-in-out;
   transition: color .2s ease-in-out; }
 
-.shop-color {
-  border: 3px solid #000000;
-  background-color: #FF0000; }
-
 @media only screen and (min-width: 301px) and (max-width: 400px) {
   .fa-star {
-    font-size: 6.5vw; } }
+    font-size: 2.2vw; }
+  .wrapper label:before {
+    margin: 0 1.4vw 0 1.4vw; } }
 
 @media only screen and (min-width: 401px) and (max-width: 625px) {
   .fa-star {
-    font-size: 5.5vw; } }
+    font-size: 1.9vw; }
+  .wrapper label:before {
+    margin: 0 1.1vw 0 1.1vw; } }
 
 @media only screen and (min-width: 626px) and (max-width: 960px) {
   .fa-star {
-    font-size: 5vw; } }
+    font-size: 1.6vw; }
+  .wrapper label:before {
+    margin: 0 0.8vw 0 0.8vw; } }
 
 @media only screen and (min-width: 961px) and (max-width: 1440px) {
   .fa-star {
-    font-size: 4vw; } }
+    font-size: 1.3vw; }
+  .wrapper label:before {
+    margin: 0 0.5vw 0 0.5vw; } }
 
 @media only screen and (min-width: 1441px) {
   .fa-star {
-    font-size: 3.6vw; } }
+    font-size: 1vw; }
+  .wrapper label:before {
+    margin: 0 0.2vw 0 0.2vw; } }
 
 .enrollment-slider {
   width: 100%; }
@@ -1552,6 +1589,46 @@ header > .enrollment-slider {
   -ms-flex-align: right;
   align-items: right; }
 
+.wrapper2 {
+  display: inline-block; }
+
+.wrapper2 input {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  opacity: 0; }
+
+.wrapper2 label {
+  position: relative;
+  float: right;
+  color: #000000;
+  -webkit-transition: color .2s ease-in-out;
+  -o-transition: color .2s ease-in-out;
+  transition: color .2s ease-in-out; }
+
+.wrapper2 label:before {
+  display: inline-block;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.wrapper2 input:checked ~ label:before {
+  color: #fe0000;
+  -webkit-transition: color .2s ease-in-out;
+  -o-transition: color .2s ease-in-out;
+  transition: color .2s ease-in-out; }
+
+.wrapper2 label:hover ~ label:before,
+.wrapper2 label:hover:before {
+  color: #fe8800;
+  -webkit-transition: color .2s ease-in-out;
+  -o-transition: color .2s ease-in-out;
+  transition: color .2s ease-in-out; }
+
 .fa-heart {
   color: #000000;
   cursor: pointer;
@@ -1567,14 +1644,44 @@ header > .enrollment-slider {
 
 .shop-color {
   border: 3px solid #000000;
-  background-color: #FF0000;
+  -webkit-transition: border .2s ease-in-out;
+  -o-transition: border .2s ease-in-out;
+  transition: border .2s ease-in-out;
   margin: -0.7vw;
+  display: inline-block;
+  cursor: pointer; }
+
+.shop-color:hover {
+  border: 3px solid #eeeeee;
+  -webkit-transition: border .2s ease-in-out;
+  -o-transition: border .2s ease-in-out;
+  transition: border .2s ease-in-out; }
+
+.shop-color-margin {
   display: inline-block; }
 
 .heart-star {
-  width: 100%; }
+  width: 60%;
+  margin-left: 20%; }
   .heart-star .margin-heart-star {
     display: inline-block; }
+
+.shop-img-container {
+  width: 100%;
+  height: 100%; }
+
+.myShopImg {
+  display: block; }
+
+.shop-img {
+  -webkit-animation: anime 0.4s;
+  animation: anime 0.4s; }
+
+@keyframes anime {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 @media only screen and (min-width: 301px) and (max-width: 400px) {
   .shop-container {
@@ -1584,10 +1691,14 @@ header > .enrollment-slider {
     width: 98vw;
     margin: 0 1vw 0 1vw; }
   .shop-color {
-    width: 1.4vw;
-    height: 1.4vw; }
+    width: 2.9vw;
+    height: 2.9vw; }
+  .shop-color-margin {
+    margin: 1.45vw; }
   .fa-heart {
-    height: 6.5vw; }
+    font-size: 2.2vw; }
+  .heart-star {
+    height: 2.2vw; }
   .margin-heart-star {
     margin: 0 3% 0 3%; }
   .shop-halfs, .shop-product-halfs {
@@ -1601,9 +1712,7 @@ header > .enrollment-slider {
   #shop-halfs-1, #shop-product-halfs-1 {
     width: 59%; }
   #shop-halfs-2, #shop-product-halfs-2 {
-    width: 39.5%;
-    -ms-flex-line-pack: end;
-    align-content: flex-end; }
+    width: 39.5%; }
   #shop-half-1, #shop-product-half-1 {
     height: 15%; }
   #shop-half-2, #shop-product-half-2 {
@@ -1624,10 +1733,14 @@ header > .enrollment-slider {
     width: 96vw;
     margin: 0 2vw 0 2vw; }
   .shop-color {
-    width: 1.6vw;
-    height: 1.6vw; }
+    width: 2.6vw;
+    height: 2.6vw; }
+  .shop-color-margin {
+    margin: 1.3vw; }
   .fa-heart {
-    font-size: 5.5vw; }
+    font-size: 1.9vw; }
+  .heart-star {
+    height: 1.9vw; }
   .margin-heart-star {
     margin: 0 5% 0 5%; }
   .shop-halfs, .shop-product-halfs {
@@ -1639,18 +1752,16 @@ header > .enrollment-slider {
     margin: 0;
     display: table; }
   #shop-halfs-1, #shop-product-halfs-1 {
-    width: 65.5%; }
+    width: 62.5%; }
   #shop-halfs-2, #shop-product-halfs-2 {
-    width: 33.5%;
-    -ms-flex-line-pack: end;
-    align-content: flex-end; }
+    width: 36.5%; }
   #shop-half-1, #shop-product-half-1 {
     height: 15%; }
   #shop-half-2, #shop-product-half-2 {
     height: 76%; }
     #shop-half-2 .text-smm, #shop-product-half-2 .text-smm {
       display: inline-block;
-      margin: 2.2%; }
+      margin: 1%; }
     #shop-half-2 a > .button-s, #shop-product-half-2 a > .button-s {
       display: inline-block; }
     #shop-half-2 a, #shop-product-half-2 a {
@@ -1664,10 +1775,14 @@ header > .enrollment-slider {
     width: 94vw;
     margin: 0 3vw 0 3vw; }
   .shop-color {
-    width: 1.8vw;
-    height: 1.8vw; }
+    width: 2.3vw;
+    height: 2.3vw; }
+  .shop-color-margin {
+    margin: 1.15vw; }
   .fa-heart {
-    font-size: 5vw; }
+    font-size: 1.6vw; }
+  .heart-star {
+    height: 1.6vw; }
   .margin-heart-star {
     margin: 0 8% 0 8%; }
   .shop-halfs, .shop-product-halfs {
@@ -1681,16 +1796,14 @@ header > .enrollment-slider {
   #shop-halfs-1, #shop-product-halfs-1 {
     width: 69%; }
   #shop-halfs-2, #shop-product-halfs-2 {
-    width: 30%;
-    -ms-flex-line-pack: end;
-    align-content: flex-end; }
+    width: 30%; }
   #shop-half-1, #shop-product-half-1 {
     height: 15%; }
   #shop-half-2, #shop-product-half-2 {
     height: 77%; }
     #shop-half-2 .text-smm, #shop-product-half-2 .text-smm {
       display: inline-block;
-      margin: 2.2%; }
+      margin: 1.3%; }
     #shop-half-2 a > .button-s, #shop-product-half-2 a > .button-s {
       display: inline-block; }
     #shop-half-2 a, #shop-product-half-2 a {
@@ -1706,8 +1819,12 @@ header > .enrollment-slider {
   .shop-color {
     width: 2vw;
     height: 2vw; }
+  .shop-color-margin {
+    margin: 1vw; }
   .fa-heart {
-    font-size: 4vw; }
+    font-size: 1.3vw; }
+  .heart-star {
+    height: 1.3vw; }
   .margin-heart-star {
     margin: 0 10% 0 10%; }
   .shop-halfs, .shop-product-halfs {
@@ -1721,16 +1838,14 @@ header > .enrollment-slider {
   #shop-halfs-1, #shop-product-halfs-1 {
     width: 69%; }
   #shop-halfs-2, #shop-product-halfs-2 {
-    width: 30%;
-    -ms-flex-line-pack: end;
-    align-content: flex-end; }
+    width: 30%; }
   #shop-half-1, #shop-product-half-1 {
     height: 15%; }
   #shop-half-2, #shop-product-half-2 {
     height: 77%; }
     #shop-half-2 .text-smm, #shop-product-half-2 .text-smm {
       display: inline-block;
-      margin: 2%; }
+      margin: 1.6%; }
     #shop-half-2 a > .button-s, #shop-product-half-2 a > .button-s {
       display: inline-block; }
     #shop-half-2 a, #shop-product-half-2 a {
@@ -1744,10 +1859,14 @@ header > .enrollment-slider {
     width: 90vw;
     margin: 0 5vw 0 5vw; }
   .shop-color {
-    width: 3vw;
-    height: 3vw; }
+    width: 1.7vw;
+    height: 1.7vw; }
+  .shop-color-margin {
+    margin: 0.85vw; }
   .fa-heart {
-    font-size: 3.6vw; }
+    font-size: 1vw; }
+  .heart-star {
+    height: 1vw; }
   .margin-heart-star {
     margin: 0 10% 0 10%; }
   .shop-halfs, .shop-product-halfs {
@@ -1759,18 +1878,16 @@ header > .enrollment-slider {
     margin: 0;
     display: table; }
   #shop-halfs-1, #shop-product-halfs-1 {
-    width: 69%; }
+    width: 75%; }
   #shop-halfs-2, #shop-product-halfs-2 {
-    width: 30%;
-    -ms-flex-line-pack: end;
-    align-content: flex-end; }
+    width: 24%; }
   #shop-half-1, #shop-product-half-1 {
     height: 15%; }
   #shop-half-2, #shop-product-half-2 {
     height: 77%; }
     #shop-half-2 .text-smm, #shop-product-half-2 .text-smm {
       display: inline-block;
-      margin: 3%; }
+      margin: 1.4%; }
     #shop-half-2 a > .button-s, #shop-product-half-2 a > .button-s {
       display: inline-block; }
     #shop-half-2 a, #shop-product-half-2 a {
