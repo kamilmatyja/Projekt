@@ -1212,72 +1212,87 @@ header > .slider {
 @media only screen and (min-width: 301px) and (max-width: 400px) {
   .button-s {
     width: 22vw;
-    height: 5.5vw;
-    font-size: 2vw; }
+    height: 5vw;
+    font-size: 2.5vw;
+    line-height: 2; }
   .button-m {
-    width: 28vw;
-    height: 6.5vw;
-    font-size: 2.8vw; }
+    width: 34vw;
+    height: 7vw;
+    font-size: 3vw;
+    line-height: 2.3; }
   .button-l {
-    width: 32vw;
-    height: 7.5vw;
-    font-size: 3.8vw; } }
+    width: 44vw;
+    height: 9vw;
+    font-size: 4vw;
+    line-height: 2.2; } }
 
 @media only screen and (min-width: 401px) and (max-width: 625px) {
   .button-s {
-    width: 18vw;
-    height: 4vw;
-    font-size: 1.6vw; }
+    width: 20vw;
+    height: 4.5vw;
+    font-size: 2vw;
+    line-height: 2; }
   .button-m {
-    width: 24vw;
-    height: 5.5vw;
-    font-size: 2.6vw; }
-  .button-l {
-    width: 28vw;
+    width: 30vw;
     height: 6.5vw;
-    font-size: 3.6vw; } }
+    font-size: 2.5vw;
+    line-height: 2.5; }
+  .button-l {
+    width: 40vw;
+    height: 8vw;
+    font-size: 3.5vw;
+    line-height: 2.3; } }
 
 @media only screen and (min-width: 626px) and (max-width: 960px) {
   .button-s {
-    width: 17vw;
-    height: 3.8vw;
-    font-size: 1.8vw; }
+    width: 13vw;
+    height: 3vw;
+    font-size: 1.5vw;
+    line-height: 2; }
   .button-m {
-    width: 22vw;
-    height: 5vw;
-    font-size: 2.6vw; }
-  .button-l {
     width: 26vw;
-    height: 6vw;
-    font-size: 3vw; } }
+    height: 5.5vw;
+    font-size: 2.5vw;
+    line-height: 2.1; }
+  .button-l {
+    width: 40vw;
+    height: 8vw;
+    font-size: 3.5vw;
+    line-height: 2.2; } }
 
 @media only screen and (min-width: 961px) and (max-width: 1440px) {
   .button-s {
-    width: 14vw;
+    width: 13vw;
     height: 3vw;
-    font-size: 1.5vw; }
+    font-size: 1.5vw;
+    line-height: 2; }
   .button-m {
     width: 20vw;
-    height: 4vw;
-    font-size: 2vw; }
+    height: 4.5vw;
+    font-size: 2vw;
+    line-height: 2.2; }
   .button-l {
-    width: 24vw;
-    height: 5.5vw;
-    font-size: 2.8vw; } }
+    width: 30vw;
+    height: 6vw;
+    font-size: 2.5vw;
+    line-height: 2.2; } }
 
 @media only screen and (min-width: 1441px) {
   .button-s {
     width: 12vw;
-    height: 2.6vw;
-    font-size: 1.3vw; }
+    height: 3vw;
+    font-size: 1.2vw;
+    line-height: 2.5; }
   .button-m {
     width: 18vw;
-    height: 3.6vw;
-    font-size: 1.8vw; }
+    height: 4vw;
+    font-size: 2.2vw;
+    line-height: 1.7; }
   .button-l {
-    width: 22vw;
-    height: 5vw;
-    font-size: 2.6vw; } }
+    width: 24vw;
+    height: 6vw;
+    font-size: 3.2vw;
+    line-height: 1.8; } }
 
 .hero, .hero2 {
   margin: 0;
@@ -1707,10 +1722,7 @@ html {
   .grid-oneThree {
     display: -ms-inline-grid;
     display: inline-grid;
-    margin: 1.5vw 0.5% 0 0.5%; }
-    .grid-oneThree .button-s {
-      width: 14vw;
-      font-size: 1.5vw; }
+    margin: 2.4vw 0.5% 0 0.5%; }
   .grid2-container {
     -ms-grid-columns: 16vw 33vw 2vw 33vw 16vw;
     grid-template-columns: 16vw 33vw 2vw 33vw 16vw;
@@ -1768,7 +1780,7 @@ html {
   .grid-oneThree {
     display: -ms-inline-grid;
     display: inline-grid;
-    margin: 1.2vw 1% 0 1%; }
+    margin: 0.6vw 1% 0 1%; }
   .grid2-container {
     -ms-grid-columns: 23vw 26vw 2vw 26vw 23vw;
     grid-template-columns: 23vw 26vw 2vw 26vw 23vw;
@@ -1826,7 +1838,7 @@ html {
   .grid-oneThree {
     display: -ms-inline-grid;
     display: inline-grid;
-    margin: 6.2vw 1% 0 1%; }
+    margin: 6vw 1% 0 1%; }
   .grid2-container {
     -ms-grid-columns: 25vw 24vw 2vw 24vw 25vw;
     grid-template-columns: 25vw 24vw 2vw 24vw 25vw;
