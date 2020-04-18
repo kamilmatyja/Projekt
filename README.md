@@ -65,7 +65,6 @@
 
 9. lista startowa (dla kazdego)
 - dane do ukazania dla kazdego (id, numer startowy, imie, nazwisko, rok, kat wiekowa, klub, miasto)
-- wiecej danych po nacisnieciu strzalki
 - po nacisnieciu na imie lub nazwisko przekierowanie na profil osoby
 - jezeli osoba jest podopiecznym to przekierowanie na podprofil podopiecznego
 
@@ -90,7 +89,6 @@
 - dodanie do koszyka
 
 14. produkt (dla kazdego)
-- mozliwosc kupienia bonu na bieg dla kogoś (kod do wprowadzenia)
 - oceny w gwiazdkach
 - dodawanie do koszyka
 - zdjecia produktu w formie galerii z <, >, x
@@ -99,8 +97,6 @@
 - opis
 - dostepnosc (jest, nie ma)
 - cena aktualna
-- cena przed obnizka
-- ilosc kupien produktu
 
 15. regulamin biegu (dla kazdego)
 - dla biegaczy
@@ -341,7 +337,7 @@
 
 --------------------------------------------------------------------
 
-# Tebele:
+# Tabele:
 
 1. uzytkownicy-logowanie (zwykly, fb, google)
 - userid (klucz glowny tabeli)
